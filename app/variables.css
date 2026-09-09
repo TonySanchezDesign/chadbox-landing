@@ -66,6 +66,17 @@
   --green-800: oklch(0.287 0.055 163.7); /* okhcl(163.7 0.055 0.287) #083323 */
   --green-900: oklch(0.200 0.036 162.7); /* okhcl(162.7 0.036 0.200) #041b11 */
 
+  /* blue */
+  --blue-100: oklch(0.909 0.015 264.5); /* okhcl(264.5 0.015 0.909) #dce1eb */
+  --blue-200: oklch(0.841 0.041 258.8); /* okhcl(258.8 0.041 0.841) #bbcce6 */
+  --blue-300: oklch(0.774 0.087 258.9); /* okhcl(258.9 0.087 0.774) #94b7ed */
+  --blue-400: oklch(0.694 0.135 260.3); /* okhcl(260.3 0.135 0.694) #6a9cf0 */
+  --blue-500: oklch(0.574 0.191 262.3); /* okhcl(262.3 0.191 0.574) #3570e7 */
+  --blue-600: oklch(0.482 0.160 262.9); /* okhcl(262.9 0.160 0.482) #2a57b7 */
+  --blue-700: oklch(0.394 0.123 261.8); /* okhcl(261.8 0.123 0.394) #1e4287 */
+  --blue-800: oklch(0.312 0.085 260.8); /* okhcl(260.8 0.085 0.312) #162f5b */
+  --blue-900: oklch(0.219 0.052 258.4); /* okhcl(258.4 0.052 0.219) #0a1a32 */
+
   /* numbers */
   --numbers-1: 1px;
   --numbers-2: 2px;
@@ -84,11 +95,12 @@
   --numbers-52: 52px;
   --numbers-56: 56px;
 
-  /* text */
-  --text-font: Inter;
-  --text-bold: Bold;
-  --text-medium: Medium;
-  --text-regular: Regular;
+  /* font */
+  --font-font-1: Inter;
+  --font-font-2: "JetBrains Mono";
+  --font-bold: Bold;
+  --font-medium: Medium;
+  --font-regular: Regular;
 
   /* time */
   --time-1: 0.12s;
@@ -108,15 +120,15 @@
   --primary-1000: var(--grey-1000);
   --primary-1100: var(--grey-1100);
   --primary-1200: var(--grey-1200);
-  --information-100: var(--purple-100);
-  --information-200: var(--purple-200);
-  --information-300: var(--purple-300);
-  --information-400: var(--purple-400);
-  --information-500: var(--purple-500);
-  --information-600: var(--purple-600);
-  --information-700: var(--purple-700);
-  --information-800: var(--purple-800);
-  --information-900: var(--purple-900);
+  --information-100: var(--blue-100);
+  --information-200: var(--blue-200);
+  --information-300: var(--blue-300);
+  --information-400: var(--blue-400);
+  --information-500: var(--blue-500);
+  --information-600: var(--blue-600);
+  --information-700: var(--blue-700);
+  --information-800: var(--blue-800);
+  --information-900: var(--blue-900);
   --success-100: var(--green-100);
   --success-200: var(--green-200);
   --success-300: var(--green-300);
@@ -145,10 +157,11 @@
   --warning-800: var(--yellow-800);
   --warning-900: var(--yellow-900);
   --foundation-dark: var(--foundation-black);
-  --text-font-font: var(--text-font);
-  --text-weight-bold: var(--text-bold);
-  --text-weight-medium: var(--text-medium);
-  --text-weight-regular: var(--text-regular);
+  --text-font-font-primary: var(--font-font-1);
+  --text-font-font-code: var(--font-font-2);
+  --text-weight-bold: var(--font-bold);
+  --text-weight-medium: var(--font-medium);
+  --text-weight-regular: var(--font-regular);
   --scale-scale-1: var(--numbers-1);
   --scale-scale-2: var(--numbers-2);
   --scale-scale-3: var(--numbers-4);
@@ -177,16 +190,16 @@
   --surface-secondary-action-selected: var(--primary-200);
   --surface-secondary-action-disabled: var(--primary-200);
   --surface-tertiary-action-default: var(--foundation-white);
-  --surface-tertiary-action-hover: var(--information-100);
-  --surface-tertiary-action-selected: var(--information-100);
+  --surface-tertiary-action-hover: var(--information-200);
+  --surface-tertiary-action-selected: var(--information-200);
   --surface-tertiary-action-disabled: var(--foundation-white);
-  --surface-success-action-default: var(--success-600);
-  --surface-success-action-hover: var(--success-700);
-  --surface-success-action-selected: var(--success-700);
+  --surface-success-action-default: var(--success-500);
+  --surface-success-action-hover: var(--success-600);
+  --surface-success-action-selected: var(--success-600);
   --surface-success-action-disabled: var(--success-300);
-  --surface-destructive-action-default: var(--destructive-600);
-  --surface-destructive-action-hover: var(--destructive-700);
-  --surface-destructive-action-selected: var(--destructive-700);
+  --surface-destructive-action-default: var(--destructive-500);
+  --surface-destructive-action-hover: var(--destructive-600);
+  --surface-destructive-action-selected: var(--destructive-600);
   --surface-destructive-action-disabled: var(--destructive-300);
   --surface-feedback-dark-informational: var(--primary-600);
   --surface-feedback-dark-informational-secondary: var(--information-600);
@@ -207,17 +220,17 @@
   --border-secondary-action-hover: var(--primary-200);
   --border-secondary-action-selected: var(--primary-200);
   --border-secondary-action-disabled: var(--primary-200);
-  --border-tertiary-action-default: var(--information-200);
-  --border-tertiary-action-hover: var(--information-200);
-  --border-tertiary-action-selected: var(--information-200);
-  --border-tertiary-action-disabled: var(--information-200);
-  --border-success-action-default: var(--success-600);
-  --border-destructive-action-default: var(--destructive-600);
-  --border-destructive-action-hover: var(--destructive-700);
-  --border-destructive-action-selected: var(--destructive-700);
+  --border-tertiary-action-default: var(--information-300);
+  --border-tertiary-action-hover: var(--information-300);
+  --border-tertiary-action-selected: var(--information-300);
+  --border-tertiary-action-disabled: var(--information-300);
+  --border-success-action-default: var(--success-500);
+  --border-destructive-action-default: var(--destructive-500);
+  --border-destructive-action-hover: var(--destructive-600);
+  --border-destructive-action-selected: var(--destructive-600);
   --border-destructive-action-disabled: var(--destructive-300);
-  --border-success-action-hover: var(--success-700);
-  --border-success-action-selected: var(--success-700);
+  --border-success-action-hover: var(--success-600);
+  --border-success-action-selected: var(--success-600);
   --border-success-action-disabled: var(--success-300);
   --border-feedback-dark-informational: var(--primary-600);
   --border-feedback-dark-informational-secondary: var(--information-600);
@@ -229,13 +242,17 @@
   --border-feedback-light-alert: var(--destructive-300);
   --border-feedback-light-warning: var(--warning-300);
   --border-feedback-light-success: var(--success-300);
+  --border-feedback-link: var(--information-500);
+  --border-feedback-link-hover: var(--information-600);
+  --border-feedback-link-disabled: var(--primary-500);
   --text-default: var(--primary-1100);
   --text-on-light-color: var(--primary-1100);
   --text-on-dark-color: var(--foundation-white);
-  --text-link: var(--primary-600);
+  --text-link: var(--information-500);
+  --text-link-hover: var(--information-600);
   --text-on-secondary: var(--primary-1100);
   --text-on-primary: var(--foundation-white);
-  --text-on-tertiary: var(--information-600);
+  --text-on-tertiary: var(--information-500);
   --text-primary-disabled: var(--primary-400);
   --text-success-disabled: var(--success-500);
   --text-destructive-disabled: var(--destructive-500);
@@ -266,10 +283,11 @@
   --icon-default: var(--primary-1100);
   --icon-on-light-color: var(--primary-1100);
   --icon-on-dark-color: var(--foundation-white);
-  --icon-link: var(--primary-600);
+  --icon-link: var(--information-500);
+  --icon-link-hover: var(--information-600);
   --icon-on-secondary: var(--primary-1100);
   --icon-on-primary: var(--foundation-white);
-  --icon-on-tertiary: var(--information-600);
+  --icon-on-tertiary: var(--information-500);
   --icon-primary-disabled: var(--primary-400);
   --icon-success-disabled: var(--success-500);
   --icon-destructive-disabled: var(--destructive-500);
@@ -324,8 +342,8 @@
     --surface-system-surface: var(--primary-1200);
     --surface-feedback-light-success: var(--success-100);
     --border-primary-action-default: var(--primary-100);
-    --border-primary-action-hover: var(--primary-200);
-    --border-primary-action-selected: var(--primary-200);
+    --border-primary-action-hover: var(--primary-300);
+    --border-primary-action-selected: var(--primary-300);
     --border-primary-action-disabled: var(--primary-100);
     --border-secondary-action-default: var(--primary-1000);
     --border-secondary-action-hover: var(--primary-1000);
@@ -353,13 +371,17 @@
     --border-feedback-light-alert: var(--destructive-200);
     --border-feedback-light-warning: var(--warning-200);
     --border-feedback-light-success: var(--success-200);
+    --border-feedback-link: var(--information-500);
+    --border-feedback-link-hover: var(--information-600);
+    --border-feedback-link-disabled: var(--primary-400);
     --text-default: var(--foundation-white);
     --text-on-light-color: var(--foundation-white);
     --text-on-dark-color: var(--foundation-white);
-    --text-link: var(--primary-400);
+    --text-link: var(--information-500);
+    --text-link-hover: var(--information-600);
     --text-on-secondary: var(--primary-200);
     --text-on-primary: var(--primary-1200);
-    --text-on-tertiary: var(--information-300);
+    --text-on-tertiary: var(--information-500);
     --text-primary-disabled: var(--primary-500);
     --text-success-disabled: var(--success-600);
     --text-destructive-disabled: var(--destructive-600);
@@ -390,10 +412,11 @@
     --icon-default: var(--foundation-white);
     --icon-on-light-color: var(--foundation-white);
     --icon-on-dark-color: var(--foundation-white);
-    --icon-link: var(--primary-400);
+    --icon-link: var(--information-500);
+    --icon-link-hover: var(--information-600);
     --icon-on-secondary: var(--primary-200);
     --icon-on-primary: var(--primary-1200);
-    --icon-on-tertiary: var(--information-300);
+    --icon-on-tertiary: var(--information-500);
     --icon-primary-disabled: var(--primary-500);
     --icon-success-disabled: var(--success-600);
     --icon-destructive-disabled: var(--destructive-600);
