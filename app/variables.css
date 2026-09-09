@@ -276,7 +276,7 @@
   --line-height-caption: var(--scale-scale-7);
   --line-height-body: var(--scale-scale-7);
   --line-height-action: var(--scale-scale-6);
-  --line-height-small: var(--scale-scale-6);
+  --line-height-small: var(--scale-scale-5);
   --border-size-border-1: var(--scale-scale-1);
   --border-size-border-2: var(--scale-scale-2);
   --border-size-focus-ring: var(--scale-scale-2);
@@ -405,7 +405,7 @@
     --line-height-caption: var(--scale-scale-7);
     --line-height-body: var(--scale-scale-7);
     --line-height-action: var(--scale-scale-6);
-    --line-height-small: var(--scale-scale-6);
+    --line-height-small: var(--scale-scale-5);
     --border-size-border-1: var(--scale-scale-1);
     --border-size-border-2: var(--scale-scale-2);
     --border-size-focus-ring: var(--scale-scale-2);
